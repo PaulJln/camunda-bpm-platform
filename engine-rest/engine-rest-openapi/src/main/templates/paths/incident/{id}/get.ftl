@@ -3,6 +3,7 @@
   <@lib.endpointInfo
       id = "getIncident"
       tag = "Incident"
+      summary = "Get Incident"
       desc = "Retrieves an incident by ID." />
 
   "parameters": [

@@ -9,7 +9,7 @@
         location = "query"
         type = "string"
         desc = "Restricts to incidents that belong to the given incident type. See the
-                [User Guide]((${docsUrl}/user-guide/process-engine/incidents/#incident-types) for a list of incident
+                [User Guide](${docsUrl}/user-guide/process-engine/incidents/#incident-types) for a list of incident
                 types." />
 
     <@lib.parameter

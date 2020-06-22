@@ -3,6 +3,7 @@
   <@lib.endpointInfo
       id = "getIncidentsCount"
       tag = "Incident"
+      summary = "Get List Count"
       desc = "Queries for the number of incidents that fulfill given parameters. Takes the same parameters as the
       [Get Incidents](${docsUrl}/reference/rest/incident/get-query/) method." />
 
@@ -59,8 +60,7 @@
         code = "400"
         dto = "ExceptionDto"
         last = true
-        desc = "Returned if some of the query parameters are invalid, for example if a sortOrder parameter is supplied,
-                but no sortBy. See the [Introduction](${docsUrl}/reference/rest/overview/#error-handling) for the error
+        desc = "Returned if some of the query parameters are invalid. See the [Introduction](${docsUrl}/reference/rest/overview/#error-handling) for the error
                 response format." />
     }
 }

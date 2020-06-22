@@ -22,13 +22,14 @@
     <@lib.property
         name = "incidentTimestamp"
         type = "string"
-        desc = "The time this incident happened. Default format* yyyy-MM-dd'T'HH:mm:ss.SSSZ." />
+        format = "date-time"
+        desc = "The time this incident happened. By [default](${docsUrl}/reference/rest/overview/date-format/),
+                the date must have the format `yyyy-MM-dd'T'HH:mm:ss.SSSZ`, e.g., `2013-01-23T14:42:45.000+0200`." />
 
     <@lib.property
         name = "incidentType"
         type = "string"
-        format = "date-time"
-        desc = "The type of incident, for example: failedJobs will be returned in case of an incident which identified
+        desc = "The type of incident, for example: `failedJobs` will be returned in case of an incident which identified
                 a failed job during the execution of a process instance. See the
                 [User Guide](${docsUrl}/user-guide/process-engine/incidents/#incident-types) for a list of incident types." />
 

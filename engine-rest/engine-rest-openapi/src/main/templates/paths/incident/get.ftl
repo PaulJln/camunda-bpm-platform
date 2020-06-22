@@ -3,6 +3,7 @@
   <@lib.endpointInfo
       id = "getIncidents"
       tag = "Incident"
+      summary = "Get List"
       desc = "Queries for incidents that fulfill given parameters. The size of the result set can be retrieved by using
               the [Get Incident Count](${docsUrl}/reference/rest/incident/get-query-count/) method." />
 
@@ -15,6 +16,7 @@
     <@lib.response
         code = "200"
         dto = "IncidentDto"
+        array = true
         desc = "Request successful."
         examples = ['"example-1": {
                        "summary": "GET `/incident/anIncidentId`",
@@ -37,9 +39,11 @@
                      }'] />
 
     <@lib.response
-        code = "404"
+        code = "400"
         dto = "ExceptionDto"
         last = true
-        desc = "Returned if an incident with given id does not exist." />
+        desc = "Returned if some of the query parameters are invalid, for example if a `sortOrder` parameter is supplied,
+                but no `sortBy`. See the [Introduction](${docsUrl}/reference/rest/overview/#error-handling) for the error
+                response format." />
     }
 }
