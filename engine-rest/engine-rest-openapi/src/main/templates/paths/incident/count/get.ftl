@@ -19,42 +19,11 @@
         array = true
         desc = "Request successful."
         examples = ['"example-1": {
-                       "summary": "GET `/incident?processInstanceId=aProcInstId`",
+                       "summary": "GET `/incident/count?processInstanceId=aProcInstId`",
                        "value": [
                            {
-                             "id": "anIncidentId",
-                             "processDefinitionId": "aProcDefId",
-                             "processInstanceId": "aProcInstId",
-                             "executionId": "anExecutionId",
-                             "incidentTimestamp": "2014-03-01T08:00:00.000+0200",
-                             "incidentType": "failedJob",
-                             "activityId": "serviceTask",
-                             "failedActivityId": "serviceTask",
-                             "causeIncidentId": "aCauseIncidentId",
-                             "rootCauseIncidentId": "aRootCauseIncidentId",
-                             "configuration": "aConfiguration",
-                             "tenantId": null,
-                             "incidentMessage": "anIncidentMessage",
-                             "jobDefinitionId": "aJobDefinitionId"
-                           },
-                           {
-                             "id": "anIncidentId",
-                             "processDefinitionId": "aProcDefId",
-                             "processInstanceId": "aProcInstId",
-                             "executionId": "anotherExecutionId",
-                             "incidentTimestamp": "2014-03-01T09:00:00.000+0200",
-                             "incidentType": "customIncidentType",
-                             "activityId": "userTask",
-                             "failedActivityId": "userTask",
-                             "causeIncidentId": "anotherCauseIncidentId",
-                             "rootCauseIncidentId": "anotherRootCauseIncidentId",
-                             "configuration": "anotherConfiguration",
-                             "tenantId": null,
-                             "incidentMessage": "anotherIncidentMessage",
-                             "jobDefinitionId": null
-                           }
-                         ]
-                     }'] />
+                             "count": 2
+                           }'] />
 
     <@lib.response
         code = "400"

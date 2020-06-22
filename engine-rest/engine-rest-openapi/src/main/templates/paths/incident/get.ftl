@@ -8,8 +8,14 @@
               the [Get Incident Count](${docsUrl}/reference/rest/incident/get-query-count/) method." />
 
   "parameters": [
-    <#assign last = true >
+    <#assign last = false >
     <#include "/lib/commons/incident-query-params.ftl">
+
+    <#assign sortByValues = [ '"incidentId"', '"incidentMessage"', '"incidentTimestamp"', '"incidentType"',
+                              '"executionId"', '"activityId"', '"processInstanceId"', '"processDefinitionId"',
+                              '"causeIncidentId"', '"rootCauseIncidentId"', '"configuration"', '"tenantId"' ] >
+    <#assign last = true >
+    <#include "/lib/commons/sort-params.ftl" >
   ],
   "responses" : {
 
