@@ -23,7 +23,8 @@
                        "value": [
                            {
                              "count": 2
-                           }'] />
+                           }
+                       }'] />
 
     <@lib.response
         code = "400"
