@@ -16,12 +16,10 @@
     <@lib.response
         code = "200"
         dto = "CountResultDto"
-        array = true
         desc = "Request successful."
         examples = ['"example-1": {
                        "summary": "GET `/incident/count?processInstanceId=aProcInstId`",
-                       "value": [
-                           {
+                       "value": {
                              "count": 2
                            }
                        }'] />
